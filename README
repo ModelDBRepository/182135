@@ -1,0 +1,41 @@
+NETMORPH is a modular simulation tool for building synaptically
+connected networks with realistic neuron morphologies.  Axonal and
+dendritic morphologies are created by using stochastic rules for the
+behavior of individual growth cones, the structures at the tip of
+outgrowing axons and dendrites (collectively called neurites) that
+mediate neurite elongation and branching. In brief, each growth cone
+has at each time step a probability to elongate the trailing neurite,
+to branch and produce two daughter growth cones, and to turn and
+change the direction of neurite outgrowth. The parameter values of the
+outgrowth model can be optimized so as to obtain an optimal match with
+the morphology of specific neuron types. Neurons are positioned in 3D
+space and grow out independently of each other. Axons and dendrites
+are not guided by any extracellular cues. Synapses between neurons are
+formed when crossing axonal and dendritic segments come sufficiently
+close to each other.
+
+NETMORPH is written in C++ and tailored to a Unix operating
+environment. Windows users can provide such an environment through
+Cygwin. After compilation of NETMORPH, one can grow single-neuron
+morphologies or networks of neurons with realistic morphologies. A
+simulation run of NETMORPH is based on a script, a text file
+containing the parameter values of the simulation. The output of
+NETMORPH consists of a number of files specifying the generated neuron
+morphologies and synaptic connectivity. Visualization of neurons and
+networks can be done by a basic visualization tool incorporated in
+NETMORPH or by a separate java program called NEURON3D.
+
+Provided here are 1) the NETMORPH program (version 2011-06-24), 2) the
+NETMORPH manual (updated 2014-04-03), 3) the visualization program
+NEURON3D (file name: Neuron4D.rar), and 4) some documentation on
+NEURON3D. The NETMORPH manual describes how NETMORPH can be installed,
+provides a number of example scripts, and explains all the parameters
+that control a NETMORPH simulation. NETMORPH was developed in the
+Neuroinformatics Group at the Department of Integrative
+Neurophysiology, VU University Amsterdam, The Netherlands, by Randal
+Koene, Jaap van Pelt and Arjen van Ooyen, with assistance from Betty
+Tijms, Peter van Hees, Frank Postma, Sander de Ridder, Sacha
+Hoedemaker, Andrew Carnell and Pieter Laurens Baljon. The work was
+supported by grants from the Netherlands Organization for Scientific
+Research (CASPAN: 635.100.005) and the European Union (NEURoVERS-it:
+019247; SECO: 216593) awarded to Jaap van Pelt and Arjen van Ooyen.
